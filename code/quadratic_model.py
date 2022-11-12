@@ -15,4 +15,5 @@ def quadratic_fit(data):
     plt.plot(data["Year"], y_fit, '--', color='red', label='quadratic fit')
     mse = mean_squared_error(data['carbon level'], y_fit)
     rmse = math.sqrt(mse)
+    print('%.5f * x^2 + %.5f * x + %.5f' % (a, b, c))
     return rmse
