@@ -10,7 +10,7 @@ data = data.drop('Unnamed: 5', axis = 1)
 data = data.drop('Unnamed: 6', axis = 1)
 data = data.drop('PPM', axis=1)
 
-print(data.to_string)
+print(data.to_string())
 
 plt.xlabel('Year')
 plt.ylabel('Temp')
