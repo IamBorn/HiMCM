@@ -14,7 +14,7 @@ data = data.rename(columns={"PPM": "carbon level"})
 print(data.to_string())
 
 plt.xlabel('Year')
-plt.ylabel('carbon dioxide cencentration levels[PPM]')
+plt.ylabel('carbon dioxide cencentration levels [PPM]')
 
 plt.plot(data["Year"], data["carbon level"], '-', label='raw data')
 qm.quadratic_fit(data)
